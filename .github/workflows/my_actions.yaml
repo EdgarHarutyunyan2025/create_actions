@@ -11,8 +11,11 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
-
+      - name: pwd
+        run: |
+          pwd
+          ls -la
       - name: my acstion 
-        uses: ./path/to/my-docker-action
+        uses: ./
         with:
           name: "John"
