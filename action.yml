@@ -9,5 +9,5 @@ runs:
   using: 'docker'
   image: 'Dockerfile'  
   args:
-    - ${{ inputs.name }}
+    - ${{ inputs.user }}
     #  entrypoint: './entrypoint.sh'
