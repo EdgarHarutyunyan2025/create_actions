@@ -8,4 +8,4 @@ RUN ls -la
 
 RUN chmod +x entrypoint.sh
 
-RUN ./entrypoint.sh
+ENTRYPOINT ./entrypoint.sh
