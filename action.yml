@@ -1,0 +1,11 @@
+name: 'My Docker GitHub Action'
+description: 'A simple GitHub Action that runs inside a Docker container'
+inputs:
+  name:
+    description: 'Name to greet'
+    required: true
+    default: 'World'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'  
+  entrypoint: '/entrypoint.sh'
