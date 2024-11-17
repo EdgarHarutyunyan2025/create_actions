@@ -10,4 +10,6 @@ runs:
   image: 'Dockerfile'  
   args:
     - ${{ inputs.user }}
+    - ${{ inputs.name }}
+    - ${{ inputs.surname }}
     #  entrypoint: './entrypoint.sh'
