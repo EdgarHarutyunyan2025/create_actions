@@ -18,4 +18,4 @@ jobs:
       - name: my acstion 
         uses: ./
         with:
-          name: "ED"
+          inputs.name: "ED"
