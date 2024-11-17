@@ -4,4 +4,6 @@ WORKDIR /usr/src/app
 
 COPY . .
 
+RUN ls -la
+
 ENTRYPOINT ["/entrypoint.sh"]
