@@ -1,4 +1,4 @@
-FROM node:16-slim
+FROM ubuntu: latest
 
 WORKDIR /usr/src/app
 
