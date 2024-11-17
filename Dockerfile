@@ -1,4 +1,4 @@
-FROM ubuntu: latest
+FROM ubuntu
 
 WORKDIR /usr/src/app
 
