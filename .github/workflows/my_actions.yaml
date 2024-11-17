@@ -18,6 +18,5 @@ jobs:
       - name: my acstion 
         uses: ./
         with:
-          env:
-            user: "Ed"
+          user: "Ed"
 
