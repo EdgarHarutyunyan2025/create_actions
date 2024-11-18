@@ -12,6 +12,6 @@ jobs:
       - name: Hello world action step
         uses: ./    #actions/hello-world-docker-action@v2
         with:
-          who-to-greet: 'github'
+          user: 'github'
       - name: Get the output time
         run: echo "The time was ${{ steps.hello.outputs.time }}"
