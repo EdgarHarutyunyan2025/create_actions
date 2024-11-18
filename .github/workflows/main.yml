@@ -12,6 +12,8 @@ jobs:
       - name: list dir
         run: ls -la
       - name: Hello world action step
+      - name: run docker
+        run: docker run hello-world:latest
         uses: ./create_actions        #actions/hello-world-docker-action@v2
         with:
           port: '80:80'
