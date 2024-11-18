@@ -1,6 +1,4 @@
-on: 
-  push:
-    - main
+on: [ push ] 
 
 jobs:
   hello_world_job:
