@@ -10,7 +10,7 @@ jobs:
       - name: list dir
         run: ls -la
       - name: Hello world action step
-        uses: ./    #actions/hello-world-docker-action@v2
+        uses: ./app    #actions/hello-world-docker-action@v2
         with:
           user: 'github'
       - name: Get the output time
