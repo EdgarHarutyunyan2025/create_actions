@@ -1,8 +1,10 @@
-#!/bin/sh -l
+#!/bin/bash
 
 echo "num1= $1"
 echo "num2= $2"
-echo "sum = $(($num1 + $num2))" >> $GITHUB_OUTPUT
+sum=$(( $1 + $2 ))
+#echo "sum = $sum"
+echo "sum= $sum" >> $GITHUB_OUTPUT
 
 #time=$(date)
 #echo "time=$time" >> $GITHUB_OUTPUT
