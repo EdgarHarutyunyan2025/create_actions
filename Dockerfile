@@ -1,15 +1,10 @@
-#FROM alpine:3.10
+FROM alpine:3.10
 
-#WORKDIR /app
+WORKDIR /app
 
-#COPY . .
+COPY . .
 
-#RUN chmod +x entrypoint.sh
-
-#ENTRYPOINT ["/app/entrypoint.sh"]
-
-FROM nginx:latest
-
-CMD ["nginx","-g","daemon off;"]
+RUN chmod +x entrypoint.sh
 
 ENTRYPOINT ["/app/entrypoint.sh"]
+
