@@ -11,9 +11,9 @@ jobs:
         run: git clone https://github.com/EdgarHarutyunyan2025/create_actions.git
       - name: list dir
         run: ls -la
-      - name: Hello world action step
       - name: run docker
         run: docker run hello-world:latest
+      - name: Hello world action step
         uses: ./create_actions        #actions/hello-world-docker-action@v2
         with:
           port: '80:80'
