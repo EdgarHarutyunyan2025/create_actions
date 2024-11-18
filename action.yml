@@ -1,15 +1,21 @@
 name: 'Hello World'
 description: 'Greet someone and record the time'
 inputs:
-  port: 
-    description: 'run port 80:80'
+  sum1: 
+    description: 'my num1'
     required: true
-    default: '80:80'
+    default: 40 
+inputs:
+  sum1:
+    description: 'my num2'
+    required: true
+    default: 50
 outputs:
   time:
-    description: 'The time we greeted you'
+    description: 'sum'
 runs:
   using: 'docker'
   image: 'Dockerfile'
   args:
-    - ${{ inputs.port }}
+    - ${{ inputs.sum1 }}
+    - ${{ inputs.sum2 }}

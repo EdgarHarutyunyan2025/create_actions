@@ -11,14 +11,11 @@ jobs:
         run: git clone https://github.com/EdgarHarutyunyan2025/create_actions.git
       - name: list dir
         run: ls -la
-      - name: run docker
-        run: docker run -p 80:80 -d nginx
-      - name: curl
-        run: curl localhost:80
       - name: Hello world action step
         uses: ./create_actions        #actions/hello-world-docker-action@v2
         with:
-          port: '80:80'
+          sum1: 80
+          sum2: 90
           #name: 'actions'
           #      - name: Get the output time
           #run: echo "The time was ${{ steps.hello.outputs.time }}"
