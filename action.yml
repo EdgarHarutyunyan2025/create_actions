@@ -5,8 +5,7 @@ inputs:
     description: 'my num1'
     required: true
     default: 40 
-inputs:
-  sum1:
+  sum2:
     description: 'my num2'
     required: true
     default: 50
