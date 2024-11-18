@@ -6,5 +6,5 @@ COPY . .
 
 RUN chmod +x entrypoint.sh
 
-ENTRYPOINT ["/create_actions/app/entrypoint.sh"]
+ENTRYPOINT ["/app/entrypoint.sh"]
 

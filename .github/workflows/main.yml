@@ -12,7 +12,7 @@ jobs:
       - name: list dir
         run: ls -la
       - name: Hello world action step
-        uses: ./create_actions        #actions/hello-world-docker-action@v2
+        uses: ./        #actions/hello-world-docker-action@v2
         with:
           sum1: 80
           sum2: 90
