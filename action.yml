@@ -12,6 +12,7 @@ inputs:
 runs:
   using: 'docker'
   image: 'Dockerfile'  
+  entryPoint: './script.sh'
   args:
     - ${{ inputs.args1 }}
     - ${{ inputs.args2 }} 
