@@ -6,7 +6,7 @@ RUN ls -la
 
 COPY /entrypoint.sh  .
 
-RUN  ls -la \
-     pwd
+RUN  ls -la 
+RUN  pwd
 
 ENTRYPOINT ["/entrypoint.sh"]
