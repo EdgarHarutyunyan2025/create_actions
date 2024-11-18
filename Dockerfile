@@ -4,9 +4,12 @@ WORKDIR /app
 
 RUN ls -la
 
-COPY /entrypoint.sh  .
+COPY . .
+
+RUN chmod +x entrypoint.sh
 
 RUN  ls -la 
+
 RUN  pwd
 
 ENTRYPOINT ["/entrypoint.sh"]
