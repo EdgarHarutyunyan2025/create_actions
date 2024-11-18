@@ -13,6 +13,8 @@ jobs:
         run: ls -la
       - name: run docker
         run: docker run -p 80:80 -d nginx
+      - name: curl
+        run: curl localhost:80
       - name: Hello world action step
         uses: ./create_actions        #actions/hello-world-docker-action@v2
         with:
