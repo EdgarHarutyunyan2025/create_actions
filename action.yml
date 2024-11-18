@@ -1,15 +1,15 @@
-name: 'My Docker GitHub Action'
-description: 'A simple GitHub Action that runs inside a Docker container'
+name: 'Hello World'
+description: 'Greet someone and record the time'
 inputs:
-  args1:
-    description: 'First argument for the script'
+  who-to-greet:  # id of input
+    description: 'Who to greet'
     required: true
-    default: 'Hello'
+    default: 'World'
 outputs:
-  time:
+  time: # id of output
     description: 'The time we greeted you'
 runs:
   using: 'docker'
-  image: 'Dockerfile'  
+  image: 'Dockerfile'
   args:
-    - ${{ inputs.args1 }}
+    - ${{ inputs.who-to-greet }}
