@@ -1,6 +1,6 @@
 FROM ubuntu
 
-WORKDIR /usr/src/app
+WORKDIR app
 
 COPY . .
 
