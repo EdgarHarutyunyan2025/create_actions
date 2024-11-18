@@ -5,13 +5,11 @@ inputs:
     description: 'First argument for the script'
     required: true
     default: 'Hello'
-  args2:
-    description: 'Second argument for the script'
-    required: true
-    default: 'World'
+outputs:
+  time:
+    description: 'The time we greeted you'
 runs:
   using: 'docker'
   image: 'Dockerfile'  
   args:
     - ${{ inputs.args1 }}
-    - ${{ inputs.args2 }} 
