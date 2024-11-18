@@ -16,5 +16,5 @@ runs:
   using: 'docker'
   image: 'Dockerfile'
   args:
-    - ${{ inputs.sum1 }}
-    - ${{ inputs.sum2 }}
+    - ${{ inputs.num1 }}
+    - ${{ inputs.num2 }}
