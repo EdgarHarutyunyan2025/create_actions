@@ -14,8 +14,8 @@ jobs:
       - name: Hello world action step
         uses: ./        #actions/hello-world-docker-action@v2
         with:
-          sum1: 80
-          sum2: 90
+          num1: 80
+          num2: 90
           #name: 'actions'
           #      - name: Get the output time
           #run: echo "The time was ${{ steps.hello.outputs.time }}"

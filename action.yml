@@ -1,16 +1,16 @@
 name: 'Hello World'
 description: 'Greet someone and record the time'
 inputs:
-  sum1: 
+  num1: 
     description: 'my num1'
     required: true
     default: 40 
-  sum2:
+  num2:
     description: 'my num2'
     required: true
     default: 50
 outputs:
-  time:
+  sum:
     description: 'sum'
 runs:
   using: 'docker'
