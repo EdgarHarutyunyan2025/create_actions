@@ -2,9 +2,13 @@ name: 'Hello World'
 description: 'Greet someone and record the time'
 inputs:
   user: 
-    description: 'Who to greet'
+    description: 'hello github'
     required: true
-    default: 'World'
+    default: 'github'
+  name:
+    description: "hello actions"
+    required: true
+    default: "actions"
 outputs:
   time:
     description: 'The time we greeted you'
@@ -13,3 +17,4 @@ runs:
   image: 'Dockerfile'
   args:
     - ${{ inputs.user }}
+    - ${{ inputs.name }}
