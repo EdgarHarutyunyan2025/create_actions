@@ -1,18 +1,17 @@
 name: 'My Docker GitHub Action'
 description: 'A simple GitHub Action that runs inside a Docker container'
 inputs:
-  arg1:
+  args1:
     description: 'First argument for the script'
     required: true
     default: 'Hello'
-  arg2:
+  args2:
     description: 'Second argument for the script'
     required: true
     default: 'World'
 runs:
   using: 'docker'
   image: 'Dockerfile'  
-  entryPoint: './script.sh'
   args:
     - ${{ inputs.args1 }}
     - ${{ inputs.args2 }} 
