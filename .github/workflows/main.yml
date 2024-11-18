@@ -13,9 +13,8 @@ jobs:
         run: ls -la
       - name: Hello world action step
         uses: ./create_actions        #actions/hello-world-docker-action@v2
-        run: docker run -p 80:80 -d actions
-          #        with:
-          #user: 'github'
+        with:
+          port: '80:80'
           #name: 'actions'
-      - name: Get the output time
-        run: echo "The time was ${{ steps.hello.outputs.time }}"
+          #      - name: Get the output time
+          #run: echo "The time was ${{ steps.hello.outputs.time }}"
