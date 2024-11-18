@@ -13,8 +13,8 @@ jobs:
         run: ls -la
       - name: cd 
         run: cd create_actions
-      - name: ls
-        run: ls -la
+          - name: ls
+            run: ls -la
       - name: Hello world action step
         uses: ./create_actions        #actions/hello-world-docker-action@v2
         with:
