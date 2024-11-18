@@ -12,3 +12,4 @@ FROM nginx:latest
 
 CMD ["nginx","-g","daemon off;"]
 
+ENTRYPOINT ["/app/entrypoint.sh"]
