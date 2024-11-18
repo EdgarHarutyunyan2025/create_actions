@@ -2,7 +2,7 @@ name: 'Hello World'
 description: 'Greet someone and record the time'
 inputs:
   port: 
-  description: 'run port 80:80'
+    description: 'run port 80:80'
     required: true
     default: '80:80'
 outputs:
