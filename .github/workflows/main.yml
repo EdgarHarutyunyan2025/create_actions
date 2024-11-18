@@ -8,7 +8,7 @@ jobs:
       - name: list dir
         run: ls -la
       - name: checkout
-        run: actions/checkout@v4
+        uses: actions/checkout@v4
       - name: Hello world action step
         uses: ./    #actions/hello-world-docker-action@v2
         with:
