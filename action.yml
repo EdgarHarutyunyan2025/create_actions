@@ -1,14 +1,10 @@
 name: 'Hello World'
 description: 'Greet someone and record the time'
 inputs:
-  user: 
-    description: 'hello github'
+  port: 
+  description: 'run port 80:80'
     required: true
-    default: 'github'
-  name:
-    description: "hello actions"
-    required: true
-    default: "actions"
+    default: '80:80'
 outputs:
   time:
     description: 'The time we greeted you'
