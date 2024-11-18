@@ -12,5 +12,5 @@ RUN  ls -la
 
 RUN  pwd
 
-ENTRYPOINT ["/app/entrypoint.sh"]
+#ENTRYPOINT ["/app/entrypoint.sh"]
 ENTRYPOINT ["ls -la"]
