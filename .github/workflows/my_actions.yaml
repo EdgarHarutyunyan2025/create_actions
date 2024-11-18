@@ -18,6 +18,6 @@ jobs:
       - name: my acstion 
         uses: ./
         with:
-          user: "github"
-          surname: "actions"
+          args1: "github"
+          args2: "actions"
 
