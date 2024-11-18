@@ -1,4 +1,4 @@
-#!/bin/sh -l
+#!/bin/bash -l
 
 echo "num1= $1"
 echo "num2= $2"
