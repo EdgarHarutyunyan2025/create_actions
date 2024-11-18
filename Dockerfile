@@ -12,4 +12,4 @@ RUN  ls -la
 
 RUN  pwd
 
-ENTRYPOINT ["/entrypoint.sh"]
+ENTRYPOINT ["/app/entrypoint.sh"]
