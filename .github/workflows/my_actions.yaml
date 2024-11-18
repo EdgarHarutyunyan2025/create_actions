@@ -17,7 +17,7 @@ jobs:
           ls -la
       - name: my acstion 
         uses: ./
-        env:
-          user: "Ed"
-          surname: "Harutyunyan"
+        with:
+          user: "github"
+          surname: "actions"
 
