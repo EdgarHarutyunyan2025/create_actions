@@ -7,8 +7,9 @@ jobs:
     steps:
       - name: list dir
         run: ls -la
+      - name: checkout
+        run: actions/checkout@v4
       - name: Hello world action step
-        id: hello
         uses: ./    #actions/hello-world-docker-action@v2
         with:
           who-to-greet: 'github'
