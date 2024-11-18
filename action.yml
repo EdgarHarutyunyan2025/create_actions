@@ -9,6 +9,6 @@ runs:
   using: 'docker'
   image: 'Dockerfile'  
   args:
-    - ${{ user }}
-    - ${{ surname }}
+    - ${{ github.user }}
+    - ${{ github.surname }}
     #  entrypoint: './entrypoint.sh'
