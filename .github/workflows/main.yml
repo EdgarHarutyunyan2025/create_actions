@@ -17,7 +17,7 @@ jobs:
           num1: 80
           num2: 90
       - name: output
-        run: echo  ${{ steps.sum-action.outputs.sum }}.
+        run: echo "The sum is: ${{ steps.sum-action.outputs.sum }}"
           #name: 'actions'
           #      - name: Get the output time
           #run: echo "The time was ${{ steps.hello.outputs.time }}"
